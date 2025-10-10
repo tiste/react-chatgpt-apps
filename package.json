@@ -1,6 +1,6 @@
 {
   "name": "react-chatgpt-apps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hooks and tools about ChatGPT Apps, with React",
   "license": "MIT",
   "author": "Baptiste Lecocq <baptiste.lecocq@gmail.com> (https://tiste.io)",
