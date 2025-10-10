@@ -1,0 +1,39 @@
+{
+  "name": "react-chatgpt-apps",
+  "version": "1.0.0",
+  "description": "Hooks and tools about ChatGPT Apps, with React",
+  "license": "MIT",
+  "author": "Baptiste Lecocq <baptiste.lecocq@gmail.com> (https://tiste.io)",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run build:js && npm run build:types",
+    "build:js": "node scripts/build.mjs",
+    "build:types": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "node scripts/build.mjs --watch",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "esbuild": "^0.25.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "react": ">= ^18"
+  }
+}
